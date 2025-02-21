@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Video Call App',
+      title: 'Sneh',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: const VideoCallHomePage(),
@@ -47,7 +47,7 @@ class _VideoCallHomePageState extends State<VideoCallHomePage> {
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Color(0xFFE3F2FD), Color(0xFFBBDEFB)],
+            colors: [Color.fromARGB(255, 90, 252, 158), Color.fromARGB(255, 0, 144, 77)],
           ),
         ),
         child: SafeArea(
@@ -59,11 +59,11 @@ class _VideoCallHomePageState extends State<VideoCallHomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      'Video Call App',
+                      'Sneh',
                       style: TextStyle(
                         fontSize: 32,
                         fontWeight: FontWeight.bold,
-                        color: Color(0xFF1565C0),
+                        color: Color.fromARGB(255, 6, 126, 10),
                       ),
                     ),
                     const SizedBox(height: 48),
@@ -120,7 +120,7 @@ class _VideoCallHomePageState extends State<VideoCallHomePage> {
                                 },
 
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor: const Color(0xFF1565C0),
+                                  backgroundColor:  Colors.lightGreen,
                                   padding: const EdgeInsets.symmetric(
                                     vertical: 16,
                                   ),
@@ -130,7 +130,11 @@ class _VideoCallHomePageState extends State<VideoCallHomePage> {
                                 ),
                                 child: const Text(
                                   'Join Meeting',
-                                  style: TextStyle(fontSize: 18),
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                               ),
                             ),
